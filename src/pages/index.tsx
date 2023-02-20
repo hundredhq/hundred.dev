@@ -19,9 +19,8 @@ const ToolsSection: FC = () => (
     <h1 className={styles.heading}>We are passionate about the latest tools</h1>
     <h3 className={styles.sub_heading}>Used by next-gen startups and enterprises</h3>
     <div className={styles.list_tools}>
-      <div style={{ display: "flex", gap: 5, alignItems: "center" }}>
+      <div>
         <img src="/react.png" alt="" />
-        <span>React</span>
       </div>
       <div>
         <img src="/nextjs.png" alt="" />
@@ -32,9 +31,8 @@ const ToolsSection: FC = () => (
       <div >
         <img src="/node.png" alt="" />
       </div>
-      <div style={{ display: "flex", gap: 5, alignItems: "center" }}>
+      <div>
         <img src="/k8s.png" alt="" />
-        <span>Kubernetes</span>
       </div>
       <div >
         <img src="/docker.png" alt="" />
@@ -52,6 +50,23 @@ const ToolsSection: FC = () => (
         <img src="/vercel.png" alt="" />
       </div>
     </div>
+  </section>
+)
+
+const AboutSection: FC = () => (
+  <section className={styles.section_about}>
+    <img src="/office.png" alt="" />
+    <h1 className={styles.heading}>Our Story</h1>
+    <p>Our founders started their careers with tech giants like Infosys, Target.com,
+      Informatica, Expedia and many more. They realized that developer experience needs
+      to be improved and hence they launched <a href='https://gigahex.com'>Gigahex</a>
+    </p>
+    <p>
+      Due to lack of resources, they had to put the project on hold. And finally they
+      decided to build a team, that helps other Dev tools startups to scale faster
+      without burning their pockets.
+    </p>
+
   </section>
 )
 
@@ -76,6 +91,7 @@ export default function Home() {
         </nav>
         <HeroSection />
         <ToolsSection />
+        <AboutSection />
       </main>
     </>
   )
