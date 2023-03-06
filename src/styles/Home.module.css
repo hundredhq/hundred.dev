@@ -59,7 +59,7 @@
 }
 
 .tools_section > img {
-  margin-top: -250px;
+  margin: -250px auto 0 auto;
 }
 
 .tools_section .tools img {
@@ -77,7 +77,7 @@
 .tools_section h2 {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   background: linear-gradient(90deg, #eb4242, #fc8936);
   background-clip: text;
   -webkit-background-clip: text;
@@ -203,12 +203,14 @@
   color: #a6a6a7;
 }
 
-.footer_section > div:first-child button {
+.footer_section .btn_connect {
   width: 350px;
   height: 60px;
   border-radius: 8px;
   border: none;
   font-size: 1.5rem;
+  background-color: #dcdcdc;
+  margin-top: 15px;
 }
 
 .footer_links {
