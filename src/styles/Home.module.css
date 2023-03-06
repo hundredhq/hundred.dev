@@ -209,7 +209,8 @@
   border-radius: 8px;
   border: none;
   font-size: 1.5rem;
-  background-color: #dcdcdc;
+  color: #fff;
+  background-image: linear-gradient(90deg, #eb4242, #fc8936);
   margin-top: 15px;
 }
 
@@ -229,4 +230,11 @@
   font-size: 1.2rem;
   padding: 10px 0;
   color: #a6a6a7;
+}
+
+.primary_text_gr {
+  background: linear-gradient(90deg, #eb4242, #fc8936);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

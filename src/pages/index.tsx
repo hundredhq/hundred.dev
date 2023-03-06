@@ -3,13 +3,19 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { FC } from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const Navigation: FC = () => (
   <header>
-    <h2>Hundred.dev</h2>
+    <a href='/' className='p-0'>
+      <h2>Hundred.dev</h2>
+    </a>
     <div className={styles.header_link}>
+      <Link href='/component/marketing/all' className='text-[#a6a6a7]'>
+        Components
+      </Link>
       <a href='/' className='text-[#a6a6a7]'>
         Our Work
       </a>
