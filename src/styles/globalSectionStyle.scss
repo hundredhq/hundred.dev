@@ -1,0 +1,9 @@
+.components-section {
+  .cmp-card {
+    &:hover {
+      .cmp-img {
+        display: none;
+      }
+    }
+  }
+}
