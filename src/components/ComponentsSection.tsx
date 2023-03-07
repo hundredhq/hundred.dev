@@ -4,12 +4,14 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { IComponents, ITabComponentsInfo } from "@/pages/components";
 import cmpCategoriesInfo from "../services/cmpCategoriesInfo.json";
+import SampleGif from "../../public/gif/sample-gif.gif";
 
 const ComponentCard: FC<IComponents> = ({ name, imgUrl, gifUrl, desc, tags, cmpId }) => {
   return (
     <div className='comp rounded-lg  h-72 m-2 bg-slate-400 relative cursor-pointer overflow-hidden ' key={cmpId}>
-      <img src={imgUrl} alt={name} />
-      <div className='absolute h-32 bottom-0 z-10 left-0 w-full bg-gradient-to-t from-gray-700  '>
+      <img src={"/gif/sample-gif.gif"} className='z-80 absolute top-0 left-0 w-full h-full' alt={name} />
+      <img src={imgUrl} alt={name} className='z-100 absolute top-0 left-0 hover:hidden w-full h-full' />
+      <div className='z-101 absolute h-28 bottom-0 left-0 w-full bg-gradient-to-t from-gray-700  '>
         <span className='text-gray-100 bottom-5 left-4 absolute'>{name}</span>
       </div>
     </div>
@@ -35,15 +37,17 @@ export const SectionTabs: FC<{ categoryKey: string; onSelectTab: (categoryKey: s
 };
 
 const ComponentsSection: FC = ({}) => {
+  const [viewComponents, setViewCompoents] = useState<IComponents[]>(cmpCategoriesInfo.categories[0].components);
   const [categoryInfo, setCategoryInfo] = useState<ITabComponentsInfo>({
     categoryName: cmpCategoriesInfo.categories[0].categoryName,
     categoryKey: cmpCategoriesInfo.categories[0].categoryKey,
     desc: cmpCategoriesInfo.categories[0].desc,
-    components: cmpCategoriesInfo.categories[0].components,
+    components: [],
   });
 
   const onSelectTab = (categoryKey: string) => {
-    setCategoryInfo(cmpCategoriesInfo.categories.find((c) => c.categoryKey === categoryKey) as any);
+    setCategoryInfo(cmpCategoriesInfo.categories.find((c) => c.categoryKey === categoryKey) as ITabComponentsInfo);
+    setViewCompoents(cmpCategoriesInfo?.categories?.find((c) => c.categoryKey === categoryKey)?.components as any);
   };
 
   return (
@@ -54,8 +58,8 @@ const ComponentsSection: FC = ({}) => {
       <p className=' px-20 text-md text-gray-400 mb-10'>{categoryInfo.desc}</p>
 
       <div className='grid px-20 pb-16  grid-cols-3  gap-2 '>
-        {categoryInfo.components.length > 0 &&
-          categoryInfo.components.map((c) => {
+        {viewComponents.length > 0 &&
+          viewComponents.map((c) => {
             return <ComponentCard {...c} key={c.cmpId} />;
           })}
       </div>
