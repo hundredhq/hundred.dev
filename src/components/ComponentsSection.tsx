@@ -2,7 +2,6 @@ import React, { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import { IComponents, ITabComponentsInfo } from "@/pages/components";
 import cmpCategoriesInfo from "../services/cmpCategoriesInfo.json";
-import SampleGif from "../../public/gif/sample-gif.gif";
 
 const ComponentCard: FC<IComponents> = ({ name, imgUrl, gifUrl, desc, tags, cmpId }) => {
   return (
