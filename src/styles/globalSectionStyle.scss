@@ -1,6 +1,19 @@
 .components-section {
   .cmp-card {
+    .cmp-footer {
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+    .cmp-video {
+      display: none;
+    }
     &:hover {
+      .cmp-footer {
+        opacity: 1;
+      }
+      .cmp-video {
+        display: block;
+      }
       .cmp-img {
         display: none;
       }

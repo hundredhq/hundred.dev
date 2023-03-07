@@ -7,10 +7,19 @@ import SampleGif from "../../public/gif/sample-gif.gif";
 const ComponentCard: FC<IComponents> = ({ name, imgUrl, gifUrl, desc, tags, cmpId }) => {
   return (
     <div className='cmp-card rounded-lg  h-72 m-2 bg-slate-400 relative cursor-pointer overflow-hidden ' key={cmpId}>
-      <img src={"/gif/sample-gif.gif"} className='cmp-gif z-80 absolute top-0 left-0 w-full h-full' alt={name} />
+      {/* <img src={"/gif/sample-gif.gif"} className='cmp-gif z-80 absolute top-0 left-0 w-full h-full' alt={name} /> */}
+      <video
+        width='100%'
+        height='100%'
+        muted
+        onMouseOver={(event: any) => event.target.play()}
+        onMouseOut={(event: any) => event.target.pause()}
+        className='cmp-video z-80 absolute top-0 left-0 w-full h-full object-fill'>
+        <source src='http://techslides.com/demos/sample-videos/small.mp4' type='video/mp4' />
+      </video>
       <img src={imgUrl} alt={name} className='cmp-img z-100 absolute top-0 left-0  w-full object-contain' />
-      <div className='z-101 absolute h-28 bottom-0 left-0 w-full bg-gradient-to-t from-gray-700  '>
-        <span className='text-gray-100 bottom-5 left-4 absolute'>{name}</span>
+      <div className='z-101 absolute h-28 bottom-0 left-0 w-full bg-gradient-to-t from-gray-700 cmp-footer '>
+        <span className='text-gray-100 bottom-5 left-4 absolute '>{name}</span>
       </div>
     </div>
   );
