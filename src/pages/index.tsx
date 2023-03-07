@@ -13,13 +13,13 @@ export const Navigation: FC = () => (
       <h2>Hundred.dev</h2>
     </a>
     <div className={styles.header_link}>
-      <Link href='/component/marketing/all' className='text-[#a6a6a7]'>
+      <Link href='/components' className='text-[#a6a6a7]'>
         Components
       </Link>
-      <a href='/' className='text-[#a6a6a7]'>
+      <Link href='/' className='text-[#a6a6a7] pr-4'>
         Our Work
-      </a>
-      <a href=''>Get Started</a>
+      </Link>
+      <Link href=''>Get Started</Link>
     </div>
   </header>
 );
