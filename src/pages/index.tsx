@@ -3,15 +3,23 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { FC } from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Navigation: FC = () => (
+export const Navigation: FC = () => (
   <header>
-    <h2>Hundred.dev</h2>
+    <a href='/' className='p-0'>
+      <h2>Hundred.dev</h2>
+    </a>
     <div className={styles.header_link}>
-      <a href='/'>Our Work</a>
-      <a href=''>Get Started</a>
+      <Link href='/components' className='text-[#a6a6a7]'>
+        Components
+      </Link>
+      <Link href='/' className='text-[#a6a6a7] pr-4'>
+        Our Work
+      </Link>
+      <Link href=''>Get Started</Link>
     </div>
   </header>
 );
@@ -26,15 +34,15 @@ const HeroSection: FC = () => (
       <p>
         Get a development team who are obsessed about quality, <br /> at <b>half </b>the cost of a US intern
       </p>
-      <button>Get Started</button>
+      <button className='mt-4'>Get Started</button>
     </div>
   </section>
 );
 
 const ToolsSection: FC = () => (
-  <section className={styles.tools_section}>
+  <section className={`${styles.tools_section}`}>
     <img src='img/coder-illustration.png' alt='' />
-    <h2>We are passionate about the latest tools</h2>
+    <h2 className='mt-3'>We are passionate about the latest tools</h2>
     <p>used by next-gen startups and enterprises</p>
     <div className={styles.tools}>
       <img src='img/icon-react.png' alt='' />
@@ -150,7 +158,7 @@ const FooterSection: FC = () => (
       </div>
       <div>
         <h2>HUNDRED.DEV</h2>
-        <p>
+        <p className='text-[#a6a6a7]'>
           A team of passionate developers <br /> who build high quality software
           <br />
           products
