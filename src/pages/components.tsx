@@ -73,7 +73,7 @@ export const HeroSection: FC = () => (
           </div>
         </div>
 
-        <p className='text-[#a6a6a7] text-lg mt-8 font-normal leading-8'>
+        <p className='text-[#f1b0b0] text-lg mt-8 font-normal leading-8'>
           Over 500+ professionally designed, fully responsive, expertly crafted component examples you can drop into your Tailwind projects
           and customize to your heart’s content.
         </p>
