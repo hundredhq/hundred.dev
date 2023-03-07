@@ -46,8 +46,9 @@ const ComponentsSection: FC = ({}) => {
   });
 
   const onSelectTab = (categoryKey: string) => {
-    setCategoryInfo(cmpCategoriesInfo.categories.find((c) => c.categoryKey === categoryKey) as ITabComponentsInfo);
-    setViewCompoents(cmpCategoriesInfo?.categories?.find((c) => c.categoryKey === categoryKey)?.components as any);
+    const findCmp = cmpCategoriesInfo.categories.find((c) => c.categoryKey === categoryKey) as ITabComponentsInfo;
+    setCategoryInfo(findCmp);
+    setViewCompoents(findCmp.components);
   };
 
   return (
