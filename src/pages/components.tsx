@@ -25,8 +25,8 @@ export interface ITabComponentsInfo {
 }
 
 export const HeroSection: FC = () => (
-  <section id='components-hero-section' className='border-b-gray-300 pt-24 pb-4 px-20 bg-[#1a1e21]'>
-    <div className='flex justify-between '>
+  <section id='components-hero-section' className='border-b-gray-300 pt-24 pb-6 px-20 bg-[#1a1e21] '>
+    <div className='flex justify-between w-[1200px] mx-auto'>
       <div className='basis-2/4'>
         <h3 className='text-[#f1b0b0] mb-3 text-2xl'>By the founder of Torqbit</h3>
         <h1 className={`${styles.primary_text_gr} text-5xl basis-1/3 font-semibold leading-tight`}>
@@ -39,9 +39,9 @@ export const HeroSection: FC = () => (
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
               className='h-8 w-8 flex-none stroke-current text-slate-400'
-              stroke-width='1.5'
-              stroke-linecap='round'
-              stroke-linejoin='round'>
+              strokeWidth='1.5'
+              strokeLinecap='round'
+              strokeLinejoin='round'>
               <ellipse cx='16' cy='16' rx='13' ry='5'></ellipse>
               <ellipse cx='16' cy='16' rx='13' ry='5' transform='rotate(60 16 16)'></ellipse>
               <ellipse rx='13' ry='5' transform='matrix(-.5 .86603 .86603 .5 16 16)'></ellipse>
@@ -59,8 +59,8 @@ export const HeroSection: FC = () => (
               xmlnsXlink='http://www.w3.org/1999/xlink'
               preserveAspectRatio='xMidYMid'
               stroke='#84841a'>
-              <g id='SVGRepo_bgCarrier' stroke-width='0'></g>
-              <g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g>
+              <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+              <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
               <g id='SVGRepo_iconCarrier'>
                 <g>
                   <path
@@ -73,14 +73,14 @@ export const HeroSection: FC = () => (
           </div>
         </div>
 
-        <p className='text-[#a6a6a7] text-lg mt-8 font-normal leading-8'>
+        <p className='text-[#f1b0b0] text-lg mt-8 font-normal leading-8'>
           Over 500+ professionally designed, fully responsive, expertly crafted component examples you can drop into your Tailwind projects
           and customize to your heart’s content.
         </p>
       </div>
       <div className={`basis-2/4`}></div>
     </div>
-    <div>
+    <div className='w-[1200px] mx-auto'>
       <div className='relative z-20 sm:z-auto mt-16'>
         <div className='mx-auto max-w-container  pb-16 '>
           <div className='relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3'>
