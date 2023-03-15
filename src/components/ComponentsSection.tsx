@@ -18,7 +18,7 @@ const scrollTo = (id: string) => {
 const ComponentCard: FC<IComponents> = ({ section, imgUrl, gifUrl, desc, tags, sectionId, category }) => {
   return (
     <Link href={`/components/${category}/sections/${sectionId}`}>
-      <div className='cmp-card rounded-lg  h-80 m-2 bg-slate-400 relative cursor-pointer overflow-hidden ' key={sectionId}>
+      <div className='cmp-card rounded-lg  h-72 m-2 bg-slate-400 relative cursor-pointer overflow-hidden ' key={sectionId}>
         <video
           width='100%'
           height='100%'
