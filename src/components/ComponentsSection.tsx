@@ -27,7 +27,7 @@ const ComponentCard: FC<IComponents> = ({ section, imgUrl, gifUrl, desc, tags, s
           onMouseOver={(event: any) => event.target.play()}
           onMouseOut={(event: any) => event.target.load()}
           className='cmp-video z-80 absolute top-0 left-0  object-fill'>
-          <source src='https://ik.imgkit.net/ikmedia/video-api/Dynamically_resize_video_lgTM6FGbJo.mp4' type='video/mp4' />
+          <source src='https://ik.imagekit.io/ogucjgfsi/video/hero-section-preview.mov' type='video/mp4' />
         </video>
         <div className='z-101 absolute h-16 bottom-0 left-0 w-full bg-gradient-to-t from-gray-700 cmp-footer '>
           <span className='text-gray-100 bottom-5 left-4 absolute '>{section}</span>

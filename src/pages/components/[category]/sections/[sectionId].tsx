@@ -47,8 +47,14 @@ export default function CmpDetailsPage(cmpInfo: ITabComponentsInfo) {
                 </Tooltip>
               </div>
             </div>
-            <div className='preview-cmp rounded-xl h-[550px] overflow-hidden '>
-              <img src={findCmp?.imgUrl} alt='' className='w-full object-contain' />
+            <div className='preview-cmp rounded-xl h-auto overflow-hidden '>
+              {/* <img src={findCmp?.imgUrl} alt='' className='w-full object-contain' /> */}
+              <iframe
+                src='https://codesandbox.io/embed/amazing-cdn-wgmkxk?fontsize=14&hidenavigation=1&theme=dark&view=preview'
+                style={{ width: "100%", height: 800, border: 0, borderRadius: 4, overflow: "hidden" }}
+                title='amazing-cdn-wgmkxk'
+                allow='accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking'
+                sandbox='allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts'></iframe>
             </div>
           </div>
         </section>
