@@ -22,11 +22,11 @@ export interface ITabComponentsInfo {
 }
 
 export const HeroSection: FC = () => (
-  <section id='components-hero-section' className='border-b-gray-300 pt-24 pb-6 px-20 bg-[#1a1e21] '>
-    <div className='flex justify-between w-[1200px] mx-auto'>
-      <div className='basis-2/4'>
-        <h3 className='text-[#f1b0b0] mb-3 text-2xl'>By the founder of Torqbit</h3>
-        <h1 className={`${styles.primary_text_gr} text-5xl basis-1/3 font-semibold leading-tight`}>
+  <section id='components-hero-section' className='border-b-gray-300 pt-16 pb-6 px-10 md:pb-2 lg:px-20 md:pt-24 bg-[#1a1e21] '>
+    <div className='flex justify-between max-w-[1200px] mx-auto'>
+      <div className='md:basis-2/4 basis-full'>
+        <h3 className='text-[#f1b0b0] mb-3 md:text-2xl text-lg'>By the founder of Torqbit</h3>
+        <h1 className={`${styles.primary_text_gr} text-[2.8rem] basis-1/3 font-semibold leading-tight`}>
           Beautiful UI components, crafted with Tailwind CSS.
         </h1>
 
@@ -75,9 +75,9 @@ export const HeroSection: FC = () => (
           and customize to your heart’s content.
         </p>
       </div>
-      <div className={`basis-2/4`}></div>
+      <div className={`basis-2/4 hidden md:block`}></div>
     </div>
-    <div className='w-[1200px] mx-auto'>
+    <div className='max-w-[1200px] mx-auto'>
       <div className='relative z-20 sm:z-auto mt-16'>
         <div className='mx-auto max-w-container  pb-16 '>
           <div className='relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3'>

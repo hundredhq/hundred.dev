@@ -2,27 +2,50 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import { FC } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const Navigation: FC = () => (
-  <header>
-    <a href='/' className='p-0'>
-      <h2>Hundred.dev</h2>
-    </a>
-    <div className={styles.header_link}>
-      <Link href={{ pathname: "/components" }} className='text-[#a6a6a7]'>
-        Components
-      </Link>
-      <Link href='/' className='text-[#a6a6a7] pr-5'>
-        Our Work
-      </Link>
-      <Link href=''>Get Started</Link>
-    </div>
-  </header>
-);
+export const Navigation: FC = () => {
+  const [mobileLink, setMobileLink] = useState<boolean>(false);
+
+  const closeMobileLink = () => {
+    setMobileLink(false);
+  };
+  return (
+    <header>
+      <a href='/' className='p-0'>
+        <h2>Hundred.dev</h2>
+      </a>
+      <div className={`${styles.header_link} hidden md:block`}>
+        <Link href={{ pathname: "/components" }} className='text-[#a6a6a7]'>
+          Components
+        </Link>
+        <Link href='/' className='text-[#a6a6a7] pr-5'>
+          Our Work
+        </Link>
+        <Link href=''>Get Started</Link>
+      </div>
+      <div className='group space-y-2 md:hidden hamburger cursor-pointer' onClick={() => setMobileLink(!mobileLink)}>
+        <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
+        <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
+        <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
+      </div>
+      <div className={`mobile-header-link hidden md:flex  ${mobileLink && "mobile-link-active"}`}>
+        <Link href={{ pathname: "/components" }} className='text-[#a6a6a7] hover:text-gray-300' onClick={closeMobileLink}>
+          Components
+        </Link>
+        <Link href='/' className='text-[#a6a6a7] pr-5 hover:text-gray-300' onClick={closeMobileLink}>
+          Our Work
+        </Link>
+        <Link href='' className='menu-getstart-btn' onClick={closeMobileLink}>
+          Get Started
+        </Link>
+      </div>
+    </header>
+  );
+};
 
 const HeroSection: FC = () => (
   <section className={styles.hero_section}>

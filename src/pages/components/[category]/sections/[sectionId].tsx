@@ -24,8 +24,8 @@ export default function CmpDetailsPage(cmpInfo: ITabComponentsInfo) {
       </Head>
       <main>
         <Navigation />
-        <section id='cmp-detail-page' className='bg-[#1a1e21] pt-24 pb-16  '>
-          <div className=' w-[1200px] mx-auto'>
+        <section id='cmp-detail-page' className='bg-[#1a1e21] pt-12 md:pt-24 pb-16  '>
+          <div className=' max-w-[1200px] mx-auto px-5'>
             <div className='navigation flex flex-col'>
               <Link href={{ pathname: "/components", query: { category: category } }} className='mb-2'>
                 <span className='text-xl text-gray-400  hover:text-[#fc8936]/[.8]'>{findCategory?.categoryName}</span>

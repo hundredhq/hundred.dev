@@ -19,3 +19,45 @@
 #githubIcon:hover path {
   fill: #fc8936;
 }
+
+.text-primary-gradient {
+  background: linear-gradient(3deg, #eb4242, #fcc136);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-header-link {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+
+  flex-direction: column;
+  background-color: #2e3235;
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
+}
+
+.mobile-link-active {
+  transform: translateX(0%);
+}
+
+.menu-getstart-btn {
+  background: linear-gradient(90deg, #eb4242, #fc8936);
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+}
