@@ -1,21 +1,18 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Navigation } from ".";
 import ComponentsSection from "@/components/ComponentsSection";
-import Link from "next/link";
-import cmpCategoriesInfo from "../services/cmpCategoriesInfo.json";
 export type categoryKeyType = "marketing" | "applicationUI" | "ecommerce";
 
 export interface IComponents {
-  name: string;
-  cmpId: string;
+  section: string;
+  sectionId: string;
   tags: string[];
   gifUrl: string;
   imgUrl: string;
   desc: string;
+  category?: string;
 }
 export interface ITabComponentsInfo {
   categoryName: string;

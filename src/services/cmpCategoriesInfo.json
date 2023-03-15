@@ -6,33 +6,33 @@
       "desc": "Heroes, feature sections, newsletter sign up forms — everything you need to build beautiful marketing websites.",
       "components": [
         {
-          "name": "Header",
-          "cmpId": "1",
-          "desc": "",
+          "section": "Header",
+          "sectionId": "header",
+          "desc": "Sample centered",
           "tags": ["header"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/userupload/5130944/file/original-c160e4e3a15de0d4d994d2d1015cc36c.jpg?compress=1&resize=1200x900"
         },
         {
-          "name": "Nav",
-          "desc": "",
-          "cmpId": "2",
+          "section": "Nav",
+          "desc": "Sample centered",
+          "sectionId": "nav",
           "tags": ["nav"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/users/5084254/screenshots/19924032/media/32f87582e6ba4625319938f69b9130eb.jpg?compress=1&resize=1000x750&vertical=top"
         },
         {
-          "name": "Hero Section",
-          "desc": "",
-          "cmpId": "3",
+          "section": "Hero Section",
+          "desc": "Sample centered",
+          "sectionId": "hero",
           "tags": ["hero"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/users/1004297/screenshots/17616576/media/3d9e728ebbe7be7807e3ee2346013e2b.png?compress=1&resize=1000x750&vertical=top"
         },
         {
-          "name": "Banner",
-          "desc": "",
-          "cmpId": "4",
+          "section": "Banner",
+          "desc": "Sample centered",
+          "sectionId": "banner",
           "tags": ["banner"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/userupload/4453875/file/original-2da266d5daa04bf6eb4d819c5f32dc00.jpg?compress=1&resize=1200x900"
@@ -45,33 +45,33 @@
       "desc": "Form layouts, tables, modal dialogs — everything you need to build beautiful responsive web applications.",
       "components": [
         {
-          "name": "Header",
-          "cmpId": "1",
-          "desc": "",
+          "section": "Header",
+          "sectionId": "header",
+          "desc": "Sample centered",
           "tags": ["header"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/userupload/5130944/file/original-c160e4e3a15de0d4d994d2d1015cc36c.jpg?compress=1&resize=1200x900"
         },
         {
-          "name": "Nav",
-          "desc": "",
-          "cmpId": "2",
+          "section": "Nav",
+          "desc": "Sample centered",
+          "sectionId": "nav",
           "tags": ["nav"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/users/5084254/screenshots/19924032/media/32f87582e6ba4625319938f69b9130eb.jpg?compress=1&resize=1000x750&vertical=top"
         },
         {
-          "name": "Hero Section",
-          "desc": "",
-          "cmpId": "3",
+          "section": "Hero Section",
+          "desc": "Sample centered",
+          "sectionId": "hero",
           "tags": ["hero"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/users/1004297/screenshots/17616576/media/3d9e728ebbe7be7807e3ee2346013e2b.png?compress=1&resize=1000x750&vertical=top"
         },
         {
-          "name": "Banner",
-          "desc": "",
-          "cmpId": "4",
+          "section": "Banner",
+          "desc": "Sample centered",
+          "sectionId": "banner",
           "tags": ["banner"],
           "gifUrl": "",
           "imgUrl": "https://cdn.dribbble.com/userupload/4453875/file/original-2da266d5daa04bf6eb4d819c5f32dc00.jpg?compress=1&resize=1200x900"

@@ -13,10 +13,10 @@ export const Navigation: FC = () => (
       <h2>Hundred.dev</h2>
     </a>
     <div className={styles.header_link}>
-      <Link href='/components' className='text-[#a6a6a7]'>
+      <Link href={{ pathname: "/components" }} className='text-[#a6a6a7]'>
         Components
       </Link>
-      <Link href='/' className='text-[#a6a6a7] pr-4'>
+      <Link href='/' className='text-[#a6a6a7] pr-5'>
         Our Work
       </Link>
       <Link href=''>Get Started</Link>
