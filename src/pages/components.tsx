@@ -13,6 +13,7 @@ export interface IComponents {
   imgUrl: string;
   desc: string;
   category?: string;
+  sandboxUrl: string;
 }
 export interface ITabComponentsInfo {
   categoryName: string;
@@ -22,7 +23,7 @@ export interface ITabComponentsInfo {
 }
 
 export const HeroSection: FC = () => (
-  <section id='components-hero-section' className='border-b-gray-300 pt-16 pb-6 px-10 md:pb-2 lg:px-20 md:pt-24 bg-[#1a1e21] '>
+  <section id='components-hero-section' className='border-b-gray-300 pt-14 pb-6 px-6 md:pb-2 lg:px-20 md:pt-24 bg-[#1a1e21] '>
     <div className='flex justify-between max-w-[1200px] mx-auto'>
       <div className='md:basis-2/4 basis-full'>
         <h3 className='text-[#f1b0b0] mb-3 md:text-2xl text-lg'>By the founder of Torqbit</h3>
