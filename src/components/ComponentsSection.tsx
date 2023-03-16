@@ -26,10 +26,10 @@ const ComponentCard: FC<IComponents> = ({ section, imgUrl, gifUrl, desc, tags, s
           muted
           onMouseOver={(event: any) => event.target.play()}
           onMouseOut={(event: any) => event.target.load()}
-          className='cmp-video z-80 absolute top-0 left-0  object-fill'>
+          className='cmp-video z-80 absolute top-0 left-0 object-fill'>
           <source src={gifUrl} type='video/mp4' />
         </video>
-        <div className='  z-101 absolute h-16 bottom-0 left-0 w-full bg-gradient-to-t from-gray-800 cmp-footer '>
+        <div className='z-101 absolute h-16 bottom-0 left-0 w-full bg-gradient-to-t from-gray-800 cmp-footer '>
           <span className='text-gray-100 bottom-5 left-4 absolute '>{section}</span>
         </div>
       </div>
@@ -44,7 +44,7 @@ export const SectionTabs: FC<{ categoryKey: string; onSelectTab: (categoryKey: s
         return (
           <span
             key={i}
-            className={`px-5 py-2 rounded-md text-sm  hover:text-[#fc8936]  cursor-pointer ${
+            className={`px-3 md:px-5 py-2 rounded-md text-sm  hover:text-[#fc8936]  cursor-pointer ${
               categoryKey === v.categoryKey ? "text-[#fc8936] bg-gray-600" : "text-gray-300"
             }`}
             onClick={() => onSelectTab(v.categoryKey)}>

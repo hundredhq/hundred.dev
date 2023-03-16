@@ -15,9 +15,9 @@ export const Navigation: FC = () => {
   };
   return (
     <header>
-      <a href='/' className='p-0'>
-        <h2>Hundred.dev</h2>
-      </a>
+      <Link href='/' className='p-0 '>
+        <h2 className='logo-name'>Hundred.dev</h2>
+      </Link>
       <div className={`${styles.header_link} hidden md:block`}>
         <Link href={{ pathname: "/components" }} className='text-[#a6a6a7]'>
           Components
@@ -32,7 +32,7 @@ export const Navigation: FC = () => {
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
       </div>
-      <div className={`mobile-header-link hidden md:flex  ${mobileLink && "mobile-link-active"}`}>
+      <div className={`mobile-header-link hidden md:flex   ${mobileLink && "mobile-link-active"}`}>
         <Link href={{ pathname: "/components" }} className='text-[#a6a6a7] hover:text-gray-300' onClick={closeMobileLink}>
           Components
         </Link>
@@ -50,11 +50,11 @@ export const Navigation: FC = () => {
 const HeroSection: FC = () => (
   <section className={styles.hero_section}>
     <div>
-      <h1>
+      <h1 className='mb-5'>
         100% dedicated development team available,
         <br /> to fire-up your future
       </h1>
-      <p>
+      <p className='mb-5'>
         Get a development team who are obsessed about quality, <br /> at <b>half </b>the cost of a US intern
       </p>
       <button className='mt-4'>Get Started</button>
@@ -63,10 +63,10 @@ const HeroSection: FC = () => (
 );
 
 const ToolsSection: FC = () => (
-  <section className={`${styles.tools_section}`}>
+  <section className={`${styles.tools_section} py-24 px-10`}>
     <img src='img/coder-illustration.png' alt='' />
-    <h2 className='mt-3'>We are passionate about the latest tools</h2>
-    <p>used by next-gen startups and enterprises</p>
+    <h2 className=' mt-8 lg:mt-12 mb-1'>We are passionate about the latest tools</h2>
+    <p className='mb-14 lg:mb-20'>used by next-gen startups and enterprises</p>
     <div className={styles.tools}>
       <img src='img/icon-react.png' alt='' />
       <img src='img/nextjs.png' alt='' />
@@ -85,8 +85,8 @@ const ToolsSection: FC = () => (
 const AboutSection: FC = () => (
   <section className={styles.about_section}>
     <div>
-      <h2>About Us</h2>
-      <p>
+      <h2 className='mb-4'>About Us</h2>
+      <p className='mb-3'>
         We are small town full stack developers, based out of coal city of India. We have worked in both established giants and on our own
         startups.{" "}
       </p>
@@ -157,7 +157,7 @@ const FooterSection: FC = () => (
     </div>
     <div className={styles.footer_links}>
       <div>
-        <h2>Company</h2>
+        <h2 className='text-primary-gradient'>Company</h2>
 
         <a href=''>About</a>
 
@@ -168,19 +168,19 @@ const FooterSection: FC = () => (
         <a href=''>Contact</a>
       </div>
       <div>
-        <h2>Legal</h2>
+        <h2 className='text-primary-gradient'>Legal</h2>
 
         <a href=''>Term & Conditions</a>
         <a href=''>Refund Policy</a>
         <a href=''>Privacy & Policy</a>
       </div>
       <div>
-        <h2>Our Work</h2>
+        <h2 className='text-primary-gradient'>Our Work</h2>
         <a href=''>Components</a>
         <a href=''>Templates</a>
       </div>
       <div>
-        <h2>HUNDRED.DEV</h2>
+        <h2 className='text-primary-gradient'>HUNDRED.DEV</h2>
         <p className='text-[#a6a6a7]'>
           A team of passionate developers <br /> who build high quality software
           <br />
