@@ -47,13 +47,12 @@ export default function CmpDetailsPage(cmpInfo: ITabComponentsInfo) {
                 </Tooltip>
               </div>
             </div>
-            <div className='preview-cmp rounded-xl h-auto overflow-hidden '>
-              {/* <img src={findCmp?.imgUrl} alt='' className='w-full object-contain' /> */}
+            <div className='preview-cmp rounded-xl h-auto overflow-hidden flex justify-center '>
               <iframe
-                src='https://codesandbox.io/embed/amazing-cdn-wgmkxk?fontsize=14&hidenavigation=1&theme=dark&view=preview'
-                style={{ width: "100%", height: 800, border: 0, borderRadius: 4, overflow: "hidden" }}
-                title='amazing-cdn-wgmkxk'
                 className='iframe-placeholder'
+                src={findCmp?.sandboxUrl}
+                style={{ width: "100%", height: 800, border: 0, borderRadius: 4, overflow: "hidden" }}
+                title='hundred.dev | components'
                 allow='accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking'
                 sandbox='allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts'></iframe>
             </div>
@@ -63,16 +62,3 @@ export default function CmpDetailsPage(cmpInfo: ITabComponentsInfo) {
     </>
   );
 }
-
-// // Fetching data from the JSON file
-// import fsPromises from "fs/promises";
-// import path from "path";
-// export async function getStaticPaths() {
-//   const filePath = path.join( "../../../services/cmpCategoriesInfo.json");
-//   const jsonData: any = await fsPromises.readFile(filePath);
-//   const objectData = JSON.parse(jsonData);
-
-//   return {
-//     cmpInfo: objectData,
-//   };
-// }
