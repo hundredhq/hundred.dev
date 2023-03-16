@@ -27,10 +27,18 @@ export const Navigation: FC = () => {
         </Link>
         <Link href=''>Get Started</Link>
       </div>
-      <div className='group space-y-2 md:hidden hamburger cursor-pointer' onClick={() => setMobileLink(!mobileLink)}>
+      <div
+        className={`group space-y-2 md:hidden hamburger cursor-pointer ${mobileLink && "hidden"}`}
+        onClick={() => setMobileLink(!mobileLink)}>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
+      </div>
+      <div
+        className={`group space-y-2 md:hidden hamburger cursor-pointer ${!mobileLink && "hidden"}`}
+        onClick={() => setMobileLink(!mobileLink)}>
+        <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white origin-center rotate-45 translate-y-1'></div>
+        <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white origin-center -rotate-45 -translate-y-1'></div>
       </div>
       <div className={`mobile-header-link hidden md:flex   ${mobileLink && "mobile-link-active"}`}>
         <Link href={{ pathname: "/components" }} className='text-[#a6a6a7] hover:text-gray-300' onClick={closeMobileLink}>
