@@ -160,7 +160,7 @@ const FooterSection: FC = () => (
         truly believe that we can make difference
       </p>
       <Link href={"https://calendly.com/hundredlabs/20min"} className={styles.btn_connect}>
-        <span>Let's Connect</span>
+        <span>Let&apos;s Connect</span>
         <span>&rarr;</span>
       </Link>
     </div>
