@@ -14,20 +14,20 @@ export const Navigation: FC = () => {
     setMobileLink(false);
   };
   return (
-    <header>
+    <header className='p-[15px]'>
       <Link href='/' className='p-0 '>
-        <h2 className='logo-name'>Hundred.dev</h2>
+        <img src='/img/hundred-torq-light.svg' alt='' className='h-8' />
       </Link>
       <div className={`${styles.header_link} hidden md:block`}>
-        <Link href={{ pathname: "/components" }} className='text-[#a6a6a7]'>
+        {/* <Link href={{ pathname: "/components" }} className='text-[#a6a6a7]'>
           Components
         </Link>
         <Link href='/' className='text-[#a6a6a7] pr-5'>
           Our Work
-        </Link>
-        <Link href=''>Get Started</Link>
+        </Link> */}
+        {/* <Link href='https://calendly.com/hundredlabs/20min'>Get Started</Link> */}
       </div>
-      <div
+      {/* <div
         className={`group space-y-2 md:hidden hamburger cursor-pointer ${mobileLink && "hidden"}`}
         onClick={() => setMobileLink(!mobileLink)}>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white'></div>
@@ -39,15 +39,15 @@ export const Navigation: FC = () => {
         onClick={() => setMobileLink(!mobileLink)}>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white origin-center rotate-45 translate-y-1'></div>
         <div className='w-8 h-0.5 bg-gray-300 group-hover:bg-white origin-center -rotate-45 -translate-y-1'></div>
-      </div>
+      </div> */}
       <div className={`mobile-header-link hidden md:flex   ${mobileLink && "mobile-link-active"}`}>
-        <Link href={{ pathname: "/components" }} className='text-[#a6a6a7] hover:text-gray-300' onClick={closeMobileLink}>
+        {/* <Link href={{ pathname: "/components" }} className='text-[#a6a6a7] hover:text-gray-300' onClick={closeMobileLink}>
           Components
-        </Link>
+        </Link> */}
 
-        <Link href='' className='menu-getstart-btn' onClick={closeMobileLink}>
+        {/* <Link href='https://calendly.com/hundredlabs/20min' className='menu-getstart-btn' onClick={closeMobileLink}>
           Get Started
-        </Link>
+        </Link> */}
       </div>
     </header>
   );
@@ -57,13 +57,15 @@ const HeroSection: FC = () => (
   <section className={styles.hero_section}>
     <div>
       <h1 className='mb-5'>
-        100% dedicated development team available,
-        <br /> to fire-up your future
+        100% dedicated developers
+        <br /> for your startup
       </h1>
       <p className='mb-5'>
-        Get a development team who are obsessed about quality, <br /> at <b>half </b>the cost of a US intern
+        Get a remote development team that can work blazing fast, <br /> at the fraction of cost of a full time employee
       </p>
-      <button className='mt-4'>Get Started</button>
+      <Link href='https://calendly.com/hundredlabs/20min' className='menu-getstart-btn'>
+        Get Started
+      </Link>
     </div>
   </section>
 );
@@ -104,14 +106,14 @@ const AboutSection: FC = () => (
       <div>
         <img src='img/people.png' alt='' />
         <hr />
-        <p>
+        <p className='p-[10px]'>
           We are always <br /> available for your <br /> success
         </p>
       </div>
       <div>
         <img src='img/network.png' alt='' />
         <hr />
-        <p>
+        <p className='p-[10px]'>
           We are passionate <br /> about solving <br />
           complex problems
         </p>
@@ -119,7 +121,7 @@ const AboutSection: FC = () => (
       <div>
         <img src='img/organisms.png' alt='' />
         <hr />
-        <p>
+        <p className='p-[10px]'>
           We work in distributed
           <br /> teams with leaser-like <br /> focus
         </p>
@@ -127,21 +129,21 @@ const AboutSection: FC = () => (
       <div>
         <img src='img/trust.png' alt='' />
         <hr />
-        <p>
+        <p className='p-[10px]'>
           We build trust with <br /> our quality of work
         </p>
       </div>
       <div>
         <img src='img/sofa.png' alt='' />
         <hr />
-        <p>
+        <p className='p-[10px]'>
           We are flexible when it <br /> comes to working with <br /> different timezones
         </p>
       </div>
       <div>
         <img src='img/home-office.png' alt='' />
         <hr />
-        <p>
+        <p className='p-[10px]'>
           Our office has all what <br /> it takes to deliver on <br /> time
         </p>
       </div>
@@ -154,12 +156,13 @@ const FooterSection: FC = () => (
     <div>
       <h2>Its time to scale your engineering team</h2>
       <p>
-        Start working with us and pay only when you truly <br /> believe that we can make difference
+        Start working with us and pay only when you <br />
+        truly believe that we can make difference
       </p>
-      <button className={styles.btn_connect}>
+      <Link href={"https://calendly.com/hundredlabs/20min"} className={styles.btn_connect}>
         <span>Let's Connect</span>
         <span>&rarr;</span>
-      </button>
+      </Link>
     </div>
     <div className={styles.footer_links}>
       <div>
@@ -210,7 +213,8 @@ export default function Home() {
         <title>Hundred.dev | We are a team of Software craftsmen</title>
         <meta name='description' content='Hundred.dev | The Ultimate software development team' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <link rel='icon' type='image/png' href='/favicon.png' />
       </Head>
       <main>
         <Navigation />

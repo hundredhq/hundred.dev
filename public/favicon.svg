@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="100" height="141"><svg width="100" height="141" viewBox="0 0 100 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 128.93V4.97735C0 1.88727 3.35454 -0.0358299 6.02113 1.52553L19.3694 9.34132C20.5951 10.059 21.3483 11.3728 21.3483 12.7931V136.936C21.3483 140.045 17.9569 141.966 15.2908 140.367L1.94249 132.36C0.7374 131.637 0 130.335 0 128.93Z" fill="url(#paint0_linear_612_3)"></path>
+<path d="M79.4944 128.977V5.12297C79.4944 2.00123 82.9109 0.0826585 85.5764 1.70753L98.082 9.33082C99.2732 10.0569 100 11.3512 100 12.7463V136.786C100 139.927 96.5456 141.843 93.8813 140.179L81.3757 132.37C80.2054 131.639 79.4944 130.357 79.4944 128.977Z" fill="url(#paint1_linear_612_3)"></path>
+<path d="M41.573 52.7766V26.0219C41.573 23.0364 44.7252 21.1031 47.3863 22.4565L57.0829 27.3879C58.4246 28.0702 59.2697 29.448 59.2697 30.9533V58.8039C59.2697 61.9412 55.8225 63.8573 53.158 62.2011L43.4614 56.1738C42.2871 55.4439 41.573 54.1592 41.573 52.7766Z" fill="url(#paint2_linear_612_3)"></path>
+<path d="M41.573 115.329V89.3698C41.573 86.1962 45.0916 84.2865 47.7526 86.0157L57.4492 92.317C58.5846 93.0548 59.2697 94.317 59.2697 95.671V121.63C59.2697 124.804 55.7511 126.714 53.0901 124.984L43.3935 118.683C42.2581 117.945 41.573 116.683 41.573 115.329Z" fill="url(#paint3_linear_612_3)"></path>
+<defs>
+<linearGradient id="SvgjsLinearGradient1003" x1="50" y1="-2" x2="50" y2="148" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EC6150"></stop>
+<stop offset="1" stop-color="#EC7F50"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1002" x1="50" y1="-2" x2="50" y2="148" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EC6150"></stop>
+<stop offset="1" stop-color="#EC7F50"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1001" x1="50" y1="-2" x2="50" y2="148" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EC6150"></stop>
+<stop offset="1" stop-color="#EC7F50"></stop>
+</linearGradient>
+<linearGradient id="SvgjsLinearGradient1000" x1="50" y1="-2" x2="50" y2="148" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EC6150"></stop>
+<stop offset="1" stop-color="#EC7F50"></stop>
+</linearGradient>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>
