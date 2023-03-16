@@ -99,6 +99,11 @@ a {
   text-decoration: none;
 }
 
+.iframe-placeholder {
+  background: url("/img/preloader.svg") center no-repeat;
+  background-size: 150px;
+}
+
 @media (prefers-color-scheme: dark) {
 }
 

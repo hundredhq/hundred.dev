@@ -44,9 +44,7 @@ export const Navigation: FC = () => {
         <Link href={{ pathname: "/components" }} className='text-[#a6a6a7] hover:text-gray-300' onClick={closeMobileLink}>
           Components
         </Link>
-        <Link href='/' className='text-[#a6a6a7] pr-5 hover:text-gray-300' onClick={closeMobileLink}>
-          Our Work
-        </Link>
+
         <Link href='' className='menu-getstart-btn' onClick={closeMobileLink}>
           Get Started
         </Link>
